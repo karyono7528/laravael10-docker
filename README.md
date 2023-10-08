@@ -13,7 +13,8 @@ make setup
 chown -R www-data:www-data . 
 
 # untuk instal npm / jalankan di local
-docker-compose run --rm npm install
-
+- docker-compose run --rm npm install
+- npm install
 # untuk run npm / jalankan di local
-docker-compose run --rm npm run dev
+- docker-compose run --rm npm run dev
+- npm run dev
