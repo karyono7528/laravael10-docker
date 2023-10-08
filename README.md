@@ -4,9 +4,10 @@ make setup
 # buat file .htaccess di root dengan bash
 - docker exec -it laravel-docker bash
 - cat > .htaccess
-`RewriteEngine On
+# copy dan paste code dibawah
+RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/public/
-RewriteRule ^(.*)$ /public/$1 [L,QSA]`
+RewriteRule ^(.*)$ /public/$1 [L,QSA]
 
 # untuk memberi akses ke storage
 chown -R www-data:www-data . 
