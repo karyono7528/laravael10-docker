@@ -2,8 +2,8 @@
 make setup
 
 # buat file .htaccess di root dengan bash
-docker exec -it laravel-docker bash
-cat > .htaccess
+- docker exec -it laravel-docker bash
+- cat > .htaccess
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ /public/$1 [L,QSA]
